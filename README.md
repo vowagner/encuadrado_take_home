@@ -25,7 +25,7 @@ Para realizar esta prueba se desarrolló una aplicación mobile utilizando Flutt
 
 ## Requisitos Previos
 
-Antes que todo, se deben tener instaldos 
+Antes que todo, se deben tener instalados 
 
 - [Flutter](https://flutter.dev/docs/get-started/install)
 - [Dart](https://dart.dev/get-dart)
