@@ -31,9 +31,21 @@ class ApptProvider extends ChangeNotifier {
         ),
         Appt(
           day: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day + 2, 0, 0, 0),
-          title: AppConstants.appt2Title,
+          title: AppConstants.appt1Title,
           startTime: AppConstants.appt2StartTime,
           endTime: AppConstants.appt2EndTime,
+        ),
+        Appt(
+          day: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day + 2, 0, 0, 0),
+          title: AppConstants.appt1Title,
+          startTime: AppConstants.appt3StartTime,
+          endTime: AppConstants.appt3EndTime,
+        ),
+        Appt(
+          day: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day + 3, 0, 0, 0),
+          title: AppConstants.appt1Title,
+          startTime: AppConstants.appt1StartTime,
+          endTime: AppConstants.appt1EndTime,
         ),
       ];
     }

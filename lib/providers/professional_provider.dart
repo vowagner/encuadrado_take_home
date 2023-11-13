@@ -19,7 +19,7 @@ class ProfessionalProvider extends ChangeNotifier {
     _professionalModel = ProfessionalModel(
       username: prefs.getString('username') ?? AppConstants.professionalUsername,
       passwordHash: prefs.getString('passwordHash') ?? AppConstants.professionalHashedPassword,
-      availableDays: (prefs.getStringList('availableDays') ?? ['0', '1', '2', '3', '4']).map(int.parse).toList(),
+      availableDays: (prefs.getStringList('availableDays') ?? ['0', '1', '1', '1', '1', '1', '0']).map(int.parse).toList(),
       availableTimeStart: _convertStringToTimeOfDay(
             prefs.getString('availableTimeStartHour'), 
             prefs.getString('availableTimeStartMinute')
