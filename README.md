@@ -55,7 +55,7 @@ Se debe tener un emulador de Android/iOS en ejecución o un dispositivo físico 
 
 ### Probar en Android
 
-- Se recomienda el uso de [Android Studio](https://developer.android.com/studio?hl=es-419) Con este, se puede crear un nuevo emulador de Android desde el AVD Manager y al momento de correr flutter run, debería ejecutar la aplicación en el emulador.
+- Se recomienda el uso de [Android Studio](https://developer.android.com/studio?hl=es-419) . Con este, se puede crear un nuevo emulador de Android desde el AVD Manager y al momento de correr flutter run, debería ejecutar la aplicación en el emulador.
 - Si se desea probar en un dispositivo físico Android, hay que activar la depuración USB y conectarlo al computador con cable USB.
 
 ### Probar en iOS
@@ -89,7 +89,7 @@ pass: enc123**456&789
 - El usuario está guardado como texto plano en la app, mientras que para la contraseña se guardó el hash SHA256.
 - Si ingresamos correctamente, veremos la vista profesional. Aquí tenemos un calendario con todas las citas ingresadas en el calendario, en vista semanal. Se puede deslizar a la izquierda o derecha para ver otras fechas. Esto fue implementado con *syncfusion_flutter_calendar*.
 - Arriba a la derecha, tenemos un botón para acceder a la configuración. En esta vista, podemos cambiar cada uno de los valores correspondientes al profesional y la config de las citas:
-Días a la semana que se atiende, Nombre del servicio, hora mínima, hora máxima, duración mínima, dirección máxima y costo por hora.
+días a la semana que se atiende, nombre del servicio, hora mínima, hora máxima, duración mínima, duración máxima y costo por hora.
 - Toda esta información se guarda en el state utilizando *Provider* como gestor de estado, además, para lograr la persistencia de datos entre sesiones, usamos *shared_preferences*. Combinando ambas, se logra un buen manejo de datos, incluso si la aplicación se cierra y abre denuevo.
 
 ### Vista Paciente
@@ -98,7 +98,7 @@ Días a la semana que se atiende, Nombre del servicio, hora mínima, hora máxim
 
 - En el calendario visto, solo veremos los días en el que el profesional trabaja. Por ejemplo, si en la vista profesional cambiamos los días disponibles a Lunes-Miercoles-Viernes, en la vista paciente solo veremos estos días. Además, solo se muestra el rango de horario en el que el profesional trabaja.
 - Arriba a la derecha, tenemos un botón para reservar una hora. Al presionarlo, se abre una pestaña que muestra la información del servicio a reservar y permite seleccionar el día de la sesión, la hora de inicio y la hora final. Si se cumplen todas las restricciones, al presionar "Agendar Cita" se guardará la cita y se podrá ver en el calendario de Paciente y de Profesional. Además, si cerramos la app y abrimos denuevo, se recuperará esa información.
-- Si la cita no es válida, aparecerá un mensaje con el la indicación del error.
+- Si la cita no es válida, aparecerá un mensaje con la indicación del error.
 
 ## Comentarios
 
